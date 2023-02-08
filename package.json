@@ -1,0 +1,33 @@
+{
+  "name": "hello-jison",
+  "version": "1.0.0",
+  "description": "* See section [Análisis Sintáctico Ascendente en JavaScript](http://crguezl.github.io/pl-html/node43.html) * The example working at  [http://crguezl.github.io/jison-minus/](http://crguezl.github.io/jison-minus/)",
+  "main": "src/transpile.js",
+  "type": "commonjs",
+  "bin": {
+    "calc2js": "./bin/calc2js.js"
+  },
+  "scripts": {
+    "test": "npm run compile; mocha test/test.mjs",
+    "cov": "nyc npm test",
+    "test1": "npm run compile; ./bin/calc2js.js test/data/test1.calc ",
+    "compile": "jison src/grammar.jison src/lexer.l -o src/calc.js"
+  },
+  "keywords": [
+    "ull",
+    "jison",
+    "espree",
+    "compiler"
+  ],
+  "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^10.0.0",
+    "espree": "^9.4.1",
+    "jison": "^0.4.18"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0"
+  }
+}
