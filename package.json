@@ -8,7 +8,7 @@
     "calc2js": "./bin/calc2js.js"
   },
   "scripts": {
-    "test": "npm run compile; mocha test/test.mjs",
+    "test": "npm run compile; mocha test/test.js",
     "cov": "nyc npm test",
     "test1": "npm run compile; ./bin/calc2js.js test/data/test1.calc ",
     "compile": "jison src/grammar.jison src/lexer.l -o src/calc.js"
