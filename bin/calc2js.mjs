@@ -8,7 +8,7 @@ import transpile from "../src/transpile.js";
 
 program
   .version(version)
-  //. fill the argumen
+  //. fill the argument
   //. fill with option "-o, --output <filename>"
   //. write the action
 

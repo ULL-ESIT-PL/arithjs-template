@@ -1,5 +1,11 @@
 %{
-const { buildRoot, buildBinaryExpression, buildLiteral } = require('./ast-build');
+const { 
+  buildLiteral, 
+  buildBinaryExpression, 
+  buildUnaryExpression,
+  buildCallExpression,
+  buildRoot
+} = require('./ast-build.js');
 %}
 
 /* set priorities */
